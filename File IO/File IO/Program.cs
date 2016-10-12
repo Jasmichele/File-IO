@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Xml;
 
 namespace jwhat
 {
@@ -11,13 +12,9 @@ namespace jwhat
     {
         static void Main(string[] args)
         {
-
             string fileName = "C:\\Users\\jasmi\\Documents\\first.txt";
-            //List<Numbers> numbers = new List<Numbers>();
 
             Numbers n = new Numbers();
-            n.MyNumber = "The number is {0}";
-
             StreamWriter sw = new StreamWriter(fileName, false);
 
             for (int i = 0; i < 100; i++)
@@ -46,9 +43,8 @@ namespace jwhat
             {
                 Console.WriteLine("{0}", n3.MyNumber);
             }
-           
+
             Console.ReadKey();
         }
-
     }
 }
