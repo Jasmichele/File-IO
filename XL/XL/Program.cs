@@ -66,24 +66,21 @@ namespace XL
                 myPlant.Add(plant);
             }
 
-            //for (int i = 0; i < myPlant.Count; i++)
-            //{
-            //    Plant p2 = new Plant();
-            //    p2.COMMON = string.Format("Common {0}", i);
-            //    p2.BOTANICAL = string.Format("Botanical {0}", i);
-            //    p2.ZONE = string.Format("Zone {0}", i);
-            //    p2.LIGHT = string.Format("Light {0}", i);
-            //    p2.LIGHT = string.Format("Price {0}", i);
-            //    Console.WriteLine();
-            //    //p2.AVAILABILTY = Convert.ToDateTime("Availabilty {0}", i);
-            //}
+          
 
 
             foreach (Plant p in myPlant)
             {
 
-                Console.WriteLine(string.Format("Common {0}, Botanical {1}, Zone {2}, Light {3}, Price {4}, Availability {5}", p.COMMON, p.BOTANICAL, p.ZONE, p.LIGHT, p.PRICE, p.AVAILABILTY));
+                Console.WriteLine(string.Format("Common {0}", p.COMMON));
+                Console.WriteLine("___________________");
+                Console.WriteLine(string.Format("Botanical {0}", p.BOTANICAL));
+                Console.WriteLine(string.Format("Zone {0}", p.ZONE));
+                Console.WriteLine(string.Format("Light {0}", p.LIGHT));
+                Console.WriteLine(string.Format("Price {0}", p.PRICE));
+                Console.WriteLine(string.Format("Availabilty {0}", p.AVAILABILTY));
                 Console.WriteLine();
+
 
             }
 
